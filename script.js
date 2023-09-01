@@ -3,6 +3,8 @@ var placeHolder = document.getElementById('placeHolder');
 var placeHolderRight = document.getElementById('placeHolderRight');
 var midButton = document.getElementById('midButton');
 var popUpBox = document.getElementById('popUpBox');
+var imagePopUp = document.getElementById("imagePopUp");
+
 var placeHolderPos = "center";
 var buttonToggle = false;
 var popUpToggle = false;
@@ -201,4 +203,16 @@ function popUp(){
    
 }
 
+function enlarge(element){
+    var image = document.createElement('img');
+    image.src = "../images/" + element.id+ ".jpg";
+    imagePopUp.style.zIndex = "6";
+    imagePopUp.style.opacity = "100%";
+    imagePopUp.innerHTML = '';
+    imagePopUp.appendChild(image);
+}
 
+function closeEnlarge(){
+    imagePopUp.style.opacity = "100%";
+    imagePopUp.style.zIndex = "-1"; 
+ }

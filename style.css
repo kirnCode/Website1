@@ -56,6 +56,15 @@ body,html{
 #header div:hover{
     background: #010a11;
 }
+
+#header a{
+    color: #D7DAE5;
+    text-decoration: none;
+    font-weight: lighter;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-size: 15px;
+}
 /*----------------------------transparent button--------------------------*/
 
 #leftButton{
@@ -119,8 +128,8 @@ body,html{
     top: 50%;
     left:25%;
     transform: translate(-50%, -50%);
-    border: solid #5D737E;
-    border-radius: 10px;
+    border: solid #5D737E 3px;
+    border-radius: 5px;
     background-color: #D7DAE5;
     transition: 250ms;
     
@@ -132,8 +141,8 @@ body,html{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: solid #5D737E 2px;
-    border-radius: 10px;
+    border: solid #5D737E 3px;
+    border-radius: 5px;
     background-color: lightgray;
     z-index: 5;
     transition: 250ms;
@@ -147,8 +156,8 @@ body,html{
     top: 50%;
     left:75%;
     transform: translate(-50%, -50%);
-    border: solid #5D737E;
-    border-radius: 10px;
+    border: solid #5D737E 3px;
+    border-radius: 5px;
     background-color: #D7DAE5;
     transition: 250ms;
     
@@ -158,8 +167,8 @@ body,html{
 img{
     width: 100%;
     height: 100%;
-    transform: rotate(-90deg);
     transition: 200ms;
+    object-fit: cover;
 }
 
 /*-------------------------popUP box------------------------------*/
@@ -171,10 +180,11 @@ img{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 0;
+    z-index: -1;
     background-color: #D7DAE5;
     border:solid #02182b 5px; 
     border-radius: 5px;
     opacity: 0;
+
 
 }
