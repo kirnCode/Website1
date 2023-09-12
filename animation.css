@@ -1,0 +1,41 @@
+@keyframes welcomeAnim {
+    from{
+        left: -50%;
+        
+        
+    }
+
+    to{
+        left: 50%;
+        z-index: -50;
+        
+        
+    }
+    
+}
+
+@keyframes backgroundTransition {
+    from{
+        opacity: 80%;
+        
+    }
+    
+    to{
+        opacity: 0%;
+        z-index: -50;
+    }
+}
+
+#welcome{
+    animation-name: welcomeAnim;
+    animation-duration: 4000ms;
+    animation-fill-mode: forwards;
+}
+
+#blackBack{
+    animation-name: backgroundTransition;
+    animation-delay: 4000ms;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-out;
+}

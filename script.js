@@ -4,6 +4,7 @@ var placeHolderRight = document.getElementById('placeHolderRight');
 var midButton = document.getElementById('midButton');
 var popUpBox = document.getElementById('popUpBox');
 var imagePopUp = document.getElementById("imagePopUp");
+var welcome = document.getElementById("welcome");
 
 var placeHolderPos = "center";
 var buttonToggle = false;
@@ -19,7 +20,7 @@ var leftHeight = "300px";
 var leftPos = "25%";
 var leftZ = "1";
 
-var rightWidth = "300px";
+var rightWidth = "300px";2
 var rightHeight = "300px";
 var rightPos = "75%";
 var rightZ = "1";
